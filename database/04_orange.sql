@@ -1,0 +1,1 @@
+SELECT nom, photo FROM personnes NATURAL JOIN photos_profil WHERE personnes.couleur = 'orange' AND timestamp > (NOW() - INTERVAL 240 HOUR);
