@@ -2,7 +2,11 @@
 
 Ce projet a ete constitue lors d'un projet de groupe pour mon examen national BACCALAUREAT en Systeme Information Numerique.
 
-Ce programme a ete realise en colaboration de : Yousaf Adeel (Presentement a l'UQAM), Mathieu Giacalone (IUT en Informatique a Aix-en-Provence), Mohammed Khalifa (Reconverssion en Psychologie)  et moi Axel Tringa.
+Ce programme a ete realise en colaboration de : 
+- Yousaf Adeel (Presentement a l'UQAM)
+- Mathieu Giacalone (IUT en Informatique a Aix-en-Provence)
+- Mohammed Khalifa (Reconverssion en Psychologie) 
+- Axel Tringa.
 
 Les commentaires en Anglais ont ete fournis par Adeel Yousaf.
 
