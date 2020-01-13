@@ -1,4 +1,4 @@
-#Primis du projet
+# Primis du projet
 
 Ce projet a ete constitue lors d'un projet de groupe pour mon examen national BACCALAUREAT en Systeme Information Numerique.
 
