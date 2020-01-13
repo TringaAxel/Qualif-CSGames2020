@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>Site Projet</title>
+        <meta charset="utf-8"/>
+    </head>
+    
+    <style>
+	
+	
+	
+	/*	
+
+		img
+        {
+            width: 100px;
+            height: 100px;
+            position :absolute; 
+            bottom:0; 
+            right:0;
+            margin-bottom: 100px;
+            margin-right: 70px;
+            filter: brightness(0.1);
+        }
+		
+		img:hover
+        {
+            filter: brightness(1.5);
+        }*/
+        
+   
+     #button
+        {
+            color: rgb(35,35,26);
+            font-size:18.5px;
+            font-weight: bold;
+            padding: 7px;
+            background-color: rgb(140,112,66);
+            border-style: none;
+            margin-left: -4px;
+            border: 5px rgb(140,112,66) solid;
+            border-left: none;
+            text-shadow: -1px -1px black, 0 -1px black;
+        }
+        
+    #button:hover
+        {
+            color: rgb(140,112,66);
+            background-color: rgb(35,35,26);
+            text-shadow: 1px 1px black;
+			cursor:pointer;
+        }
+
+        input[target] {
+            position: absolute;
+            left: -9999px;
+            }
+
+label {
+  display: block;
+  position: relative;
+  padding: 15px 30px 15px 70px;
+  color: rgb(140,112,66);
+  cursor: pointer;
+  user-select: none;
+  transition: background-color .2s, box-shadow .2s;
+  font-size: 35px;
+}
+
+        label::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 10px;
+            bottom: 10px;
+            left: 10px;
+            width: 43px;
+            border: 3px solid rgb(140,112,66);
+        }
+        
+        label::after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 20px;
+            bottom: 20px;
+            left: 20px;
+            width: 23px;
+            border: 3px solid rgba(140,112,66,0);
+            transform: rotate(0deg);
+            transition: background-color .2s;
+            animation: carre 10s infinite;
+			border-radius:0px;
+            }
+
+        @-webkit-keyframes carre {
+            from {transform: rotate(0deg);border-radius:0px;}
+            to {transform: rotate(3240deg);border-radius:40px;}
+        }
+        
+input:checked + label::after {
+  background-color: rgb(140,112,66);
+}
+
+    </style>
+    <body style="background-color:rgb(35,35,26); margin:0px;padding:0px;font-family: Arial, sans-serif;">
+	
+      
+    <div style="height: 150px; background-color: rgb(140,112,66);display: flex;"> 
+        
+            <div> 
+                <h2 style="font-size: 60px;color: rgb(35,35,26);margin-top: -10px;position: relative;top: 10px;text-shadow: 1px 4px 6px black;left:20px;">STI2D </h2>
+                <h2 style="font-size: 60px;color: rgb(35,35,26);margin-top: -55px;position: relative;top: 10px;text-shadow: 1px 4px 6px black;left:20px;">TSIN2</h2>
+            </div>
+            
+            <h1 style="font-size: 60px; color: rgb(35,35,26);text-shadow: 1px 4px 6px black;font-weight: bold;margin-top:30px;width:800px;margin-left: auto;margin-right: auto;">  L'éclairage intelligent </h1>
+            
+    </div> 
+
+       <div style="margin-top: 30vh;">
+            <h3 style="color: rgb(140,112,66); font-size: 60px;text-align: center;">Intensité lumineuse de l'éclairage ambiant</h3>
+            <div style="display:flex; margin:-40px auto 0px auto; width:700px;"> 
+				<div style="border: 5px rgb(140,112,66) solid;width:250px;height: 130px;margin:auto;"><p style="font-size: 60px;text-align: center;margin-top: 30px;color: rgb(140,112,66);">163</p></div>
+            
+            
+				<p style="font-size: 60px;color: rgb(140,112,66);position:relative;right:80px;">Candelas</p>
+            
+			</div>
+		</div>
+		<form style="position :absolute; bottom:0px; right:0px; margin-bottom:10px;"> 
+            <input target="carre" type="checkbox" id="toggle">
+			<label for="toggle">Mode Test</label>
+		</form>
+        
+        <form style="position :absolute; bottom:60px;margin: 20px;">     
+                <input type="text" style="font-size: 19px;font-weight: bold;padding: 7px;border: 5px rgb(140,112,66) solid;background-color:bisque;" placeholder="Valeur du Mode Test">
+                <input type="submit" value="OK" id="button">
+      </form>
+	   
+	   <form style="position :absolute; bottom:0;margin: 20px;">     
+                <input type="text" style="font-size: 19px;font-weight: bold;padding: 7px;border: 5px rgb(140,112,66) solid;background-color:bisque;" placeholder="Valeur de consigne">
+                <input type="submit" value="OK" id="button">
+      </form>
+       
+    </body>
+    
+</html>
