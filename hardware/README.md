@@ -20,3 +20,4 @@ Ce projet a pour but de fournir une intelligence/logique au luminaire exterieur.
 - Programme_STI2D_GR1.ino (Fichier pour le arduino)
 - Puis un dossier qui contient deux pages web , une pour faire une effet de transition pour la page principale
 
+**NB :** Si vous voulez regarder le powerpoint, le mode diaporama est fortement conseillé a cause de certaine animation. 
