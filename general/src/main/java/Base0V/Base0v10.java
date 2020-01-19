@@ -8,11 +8,11 @@ public class Base0v10 {
 
     private static void input (ArrayList<Integer> number) {
         System.out.println("Les inputs acceptes sont : 0v... ou directement le chiffre\n");
-        System.out.print("Merci de rentrer la premiere valeur :");
+        System.out.print("Merci de rentrer la premiere valeur : ");
         try {
             Scanner sc = new Scanner(System.in);
             String octale1 = sc.nextLine();
-            System.out.println("Merci de bien vouloir rentrer la deuxieme valeur :");
+            System.out.print("Merci de bien vouloir rentrer la deuxieme valeur : ");
             String octale2 = sc.nextLine();
             if (testInput(octale1) && testInput(octale2)){
                 number.add(Integer.parseInt(octale1.substring(2)));
