@@ -4,6 +4,9 @@ import java.util.*;
 
 public class Pelicans {
 
+    /*
+        Test des 2 rolls
+     */
     private static boolean testDeuxJoueur(ArrayList<Integer> array) {
         boolean test = false;
         if (array.get(0).equals(array.get(1))){
@@ -11,6 +14,9 @@ public class Pelicans {
         }
         return test;
     }
+    /*
+        Affichage en fin de jeu;
+     */
     private static void affichageFin (ArrayList<Integer> array){
         if (array.get(2) > array.get(3)){
             System.out.println("Joueur 1 gagne avec " + array.get(2) + " artichauts !");
@@ -31,6 +37,9 @@ public class Pelicans {
             System.out.println("Fin de la partie !");
         }
     }
+    /*
+        Fonction du jeu principal;
+     */
     private static boolean game (ArrayList<Integer> joueur) {
         roll(joueur);
        boolean endGame = testDeuxJoueur(joueur);
@@ -45,6 +54,7 @@ public class Pelicans {
        }
        return endGame;
     }
+
     private static void restart3Lancer (ArrayList<Integer> array){
             array.set(2,0);
             array.set(3,0);
@@ -59,6 +69,9 @@ public class Pelicans {
             affichageFin(array);
 
     }
+    /*
+        Fonction de difference d'artichauts
+     */
     private static void difference(ArrayList<Integer> joueur){
         if (joueur.get(0) > joueur.get(1)) {
             joueur.set(2, joueur.get(2) + (joueur.get(0) - joueur.get(1)));
@@ -66,6 +79,9 @@ public class Pelicans {
             joueur.set(3, joueur.get(3) + (joueur.get(1) - joueur.get(0)));
         }
     }
+    /*
+        Fonction de lancee de rolls;
+     */
     private static void roll (ArrayList<Integer> array){
         double value1 = Math.random()*((6-1)+ 1)+1;
         double value2 = Math.random()*((6-1)+ 1)+1;
@@ -73,6 +89,10 @@ public class Pelicans {
         array.set(1,(int)value2);
         array.set(4,array.get(4)+1);
     }
+    /*
+        Si l'un des joueur fait 6 et que l'autre ne dispose pas du chiffre 1,
+        alors le joueur ayant fait 6 get 17% des artichauts adverse;
+     */
     private static void voleur (ArrayList<Integer> joueur){
         if (joueur.get(0) == 6){
             joueur.set(2,joueur.get(3)+(int)(joueur.get(3)*0.17));
@@ -82,6 +102,14 @@ public class Pelicans {
             joueur.set(2,(int)(joueur.get(2)*0.83));
         }
     }
+    /*
+        Dans le ArrayList joueur nous diposons :
+            - Index 0 Le rolls du premier joueur;
+            - Index 1 Le rolls du deuxieme joueur;
+            - Index 2 Le nombre total d'artichauts du premier joueur;
+            - Index 3 Le nombre total d'artichauts du deuxieme joueur;
+            - Index 4 Le nombre de rolls total jouee;
+     */
     public static void main(String[] args) {
         System.out.println("Bienvenue dans le jeu du pelicans !");
         ArrayList<Integer> joueur = new ArrayList<>();
