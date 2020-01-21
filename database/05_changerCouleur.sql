@@ -1,1 +1,0 @@
-ALTER TABLE personnes MODIFY COLUMN couleur enum('rouge','bleu','orange','turquoise','mauve','vert','gris');

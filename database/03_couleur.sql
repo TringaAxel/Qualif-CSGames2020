@@ -1,1 +1,0 @@
-SELECT couleur from personnes where id between 5 AND 10; 
