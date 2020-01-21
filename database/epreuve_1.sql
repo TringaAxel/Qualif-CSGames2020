@@ -1,0 +1,21 @@
+INSERT INTO personnes (nom,couleur,poste) VALUES ("Jacques Berger","bleu","Enseignant");
+INSERT INTO personnes (nom,couleur,poste) VALUES ("Bruno Malenfant","orange","Enseignant");
+INSERT INTO personnes (nom,couleur,poste) VALUES ("Melanie Lord","rouge","Enseignant");
+INSERT INTO personnes (nom,couleur,poste) VALUES ("Axel Tringa","bleu","Eleve");
+INSERT INTO personnes (nom,couleur,poste) VALUES ("Maeliss Teissier","turquoise","Eleve");
+INSERT INTO personnes (nom,couleur,poste) VALUES ("Adeel Youssaf","rouge","Eleve");
+INSERT INTO personnes (nom,couleur,poste) VALUES ("Chaimaa Frouni","bleu","Eleve");
+INSERT INTO personnes (nom,couleur,poste) VALUES ("Brazhia Duesnas","orange","Eleve");
+INSERT INTO personnes (nom,couleur,poste) VALUES ("Harry Obertan","rouge","Eleve");
+INSERT INTO personnes (nom,couleur,poste) VALUES ("Guy Francoeur","rouge","Enseignant");
+
+INSERT INTO photos_profil (id_personnes,photo,timestamp) VALUES (1,"image1",(NOW() - INTERVAL 336 HOUR));
+INSERT INTO photos_profil (id_personnes,photo,timestamp) VALUES (2,"image2",(NOW() - INTERVAL 300 HOUR));
+INSERT INTO photos_profil (id_personnes,photo,timestamp) VALUES (3,"image3",(NOW() - INTERVAL 240 HOUR));
+INSERT INTO photos_profil (id_personnes,photo,timestamp) VALUES (4,"image4",(NOW() - INTERVAL 200 HOUR));
+INSERT INTO photos_profil (id_personnes,photo,timestamp) VALUES (5,"image5",(NOW() - INTERVAL 180 HOUR));
+INSERT INTO photos_profil (id_personnes,photo,timestamp) VALUES (6,"image6",(NOW() - INTERVAL 150 HOUR));
+INSERT INTO photos_profil (id_personnes,photo,timestamp) VALUES (7,"image7",(NOW() - INTERVAL 69 HOUR));
+INSERT INTO photos_profil (id_personnes,photo,timestamp) VALUES (8,"image8",(NOW() - INTERVAL 45 HOUR));
+INSERT INTO photos_profil (id_personnes,photo,timestamp) VALUES (9,"image9",(NOW() - INTERVAL 24 HOUR));
+INSERT INTO photos_profil (id_personnes,photo,timestamp) VALUES (10,"image10",(NOW() - INTERVAL 1 HOUR));
