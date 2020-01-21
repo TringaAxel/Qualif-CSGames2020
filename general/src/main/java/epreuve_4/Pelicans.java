@@ -1,4 +1,4 @@
-package Peli;
+package epreuve_4;
 
 import java.util.*;
 
